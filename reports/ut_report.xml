@@ -1,0 +1,11 @@
+<testExecutions version="1">
+  <file path="src/app/cafes/cafe.service.spec.ts">
+    <testCase name="CafeService debería retornar un Observable de Cafe[] desde getCafes()" duration="8"/>
+    <testCase name="CafeService debería crearse el servicio" duration="1"/>
+  </file>
+  <file path="src/app/cafes/cafe-list/cafe-list.component.spec.ts">
+    <testCase name="CafeListComponent debería crear una tabla con un encabezado y tres filas de datos" duration="31"/>
+    <testCase name="CafeListComponent debería crear una tabla con tres filas más el encabezado" duration="2"/>
+    <testCase name="CafeListComponent debería crear el componente" duration="2"/>
+  </file>
+</testExecutions>
