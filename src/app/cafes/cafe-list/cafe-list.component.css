@@ -26,3 +26,21 @@
   background-color: #343c44;
   color: #fff;
 }
+
+.totales {
+  margin-top: -3rem;
+}
+
+.total-cafe-origen,
+.total-cafe-blend {
+  margin-bottom: 0.25rem;
+}
+
+.contact-row {
+  margin-top: 3rem;
+}
+
+.contact-info {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
