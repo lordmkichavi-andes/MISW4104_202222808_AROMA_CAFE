@@ -9,6 +9,8 @@ import { CafeService } from '../cafe.service';
 })
 export class CafeListComponent implements OnInit {
   cafes: Cafe[] = [];
+  totalCafeDeOrigen: number = 0;
+  totalCafeBlend: number = 0;
 
   constructor(private cafeService: CafeService) {}
 
@@ -20,6 +22,8 @@ export class CafeListComponent implements OnInit {
     this.cafeService.getCafes().subscribe(
       (cafesDesdeApi) => {
         this.cafes = cafesDesdeApi;
+        this.totalCafeDeOrigen = cafesDesdeApi.filter(cafe => cafe.tipo === 'Café de Origen').length;
+        this.totalCafeBlend = cafesDesdeApi.filter(cafe => cafe.tipo === 'Blend').length;
       },
       (error) => {
         console.error('Error al obtener los cafés', error);
